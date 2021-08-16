@@ -11,6 +11,7 @@ class TransactionList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("build() TrascationPage");
     return Container(
       height: MediaQuery.of(context).size.height * 0.7,
       child: transactions.isEmpty
@@ -48,6 +49,7 @@ class TransactionList extends StatelessWidget {
                         .text
                         .make(),
                     trailing: MediaQuery.of(context).size.width > 360
+                        // ignore: deprecated_member_use
                         ? FlatButton.icon(
                             onPressed: () => deletetx(transactions[index].id),
                             icon: Icon(Icons.delete),

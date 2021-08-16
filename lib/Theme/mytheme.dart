@@ -13,6 +13,7 @@ class MyTheme {
         elevation: 0.0,
         iconTheme: IconThemeData(color: Colors.black),
         textTheme: ThemeData.light().textTheme.copyWith(
+            // ignore: deprecated_member_use
             title: TextStyle(
                 fontFamily: GoogleFonts.poppins().fontFamily, fontSize: 20)),
       ));
