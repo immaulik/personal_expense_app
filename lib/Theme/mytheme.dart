@@ -14,7 +14,7 @@ class MyTheme {
         iconTheme: IconThemeData(color: Colors.black),
         textTheme: ThemeData.light().textTheme.copyWith(
             // ignore: deprecated_member_use
-            title: TextStyle(
+            headline6: TextStyle(
                 fontFamily: GoogleFonts.poppins().fontFamily, fontSize: 20)),
       ));
 }
